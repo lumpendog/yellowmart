@@ -1,0 +1,17 @@
+https://json-generator.com/
+
+furniture:
+[
+  '{{repeat(100)}}',
+  {
+    _id: '{{objectId()}}',
+    index: '{{index(2200)}}',
+    name: '{{lorem(2, "words")}}',
+    price: '{{integer(10, 4000)}}',
+    pictureSmall: 'http://placehold.it/100x100',
+    pictureBig: 'http://placehold.it/200x200',
+    category: '{{random("categories.sofas", "categories.chairs", "categories.tables", "categories.storage", "categories.beds", "categories.lighting", "categories.textiles", "categories.decor", "categories.garden", "categories.kitchen", "categories.lifestyle")}}',
+    quantity: '{{integer(0,50)}}',
+    about: '{{lorem(1, "paragraph")}}'
+  }
+]

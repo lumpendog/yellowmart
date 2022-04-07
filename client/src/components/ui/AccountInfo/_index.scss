@@ -1,0 +1,50 @@
+@use '../../app/variables';
+
+.account-info-container {
+  grid-column: 2/3;
+
+  &__h2 {
+    color: variables.$color-grey-dark-3;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 63rem) {
+    grid-column: 1/4;
+  }
+}
+
+.personal-settings {
+  display: flex;
+  padding: 2rem;
+
+  &__avatar-box {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33%;
+    margin: 2rem;
+  }
+
+  &__avatar-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__input-avatar {
+    display: none;
+  }
+
+  &__settings {
+    width: 66.66%;
+  }
+
+  &__buttons-box {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+}

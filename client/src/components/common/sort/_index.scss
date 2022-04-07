@@ -1,0 +1,12 @@
+@use '../../app/variables';
+
+.sort-container {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  &__h2 {
+    color: variables.$color-grey-dark-3;
+  }
+}

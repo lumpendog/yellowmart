@@ -1,0 +1,38 @@
+@use '../../app/variables';
+
+.navbar {
+  grid-column: 1 / 2;
+  margin: 0;
+  border: 2px solid variables.$color-secondary-light;
+  border-radius: 2px;
+  font-size: variables.$default-font-size;
+  font-weight: 400;
+  color: variables.$color-grey-dark-3;
+  user-select: none;
+  cursor: pointer;
+
+  &__list {
+    list-style: none;
+
+    & > *:not(:last-child) {
+      border-bottom: solid 1px rgba(variables.$color-grey-light-3, 0.15);
+    }
+  }
+  &__item {
+    padding: 1rem;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      background-color: variables.$color-grey-light-2;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+
+    &.selected {
+      background-color: variables.$color-secondary-light;
+      color: variables.$color-grey-light-1;
+    }
+  }
+}

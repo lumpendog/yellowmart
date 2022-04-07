@@ -1,0 +1,63 @@
+@use '../../app/variables';
+
+.btn {
+  border: none;
+  background-color: variables.$color-primary;
+  color: variables.$color-grey-light-1;
+  border-radius: 3px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &-xs {
+    font-size: 2rem;
+    font-weight: 100;
+    height: 3rem;
+    width: 3rem;
+  }
+
+  &-sm {
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 3rem;
+    width: 11rem;
+  }
+
+  &-lg {
+    font-size: 2rem;
+    font-weight: 100;
+    height: 4rem;
+    width: 16rem;
+  }
+
+  &-flex-sm {
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 3rem;
+    width: 100%;
+  }
+
+  &-flex-lg {
+    font-size: 2rem;
+    font-weight: 100;
+    height: 4rem;
+    width: 100%;
+  }
+
+  &:hover {
+    color: variables.$color-secondary-light;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:disabled {
+    background-color: variables.$color-primary-light;
+    color: variables.$color-grey-light-3;
+    cursor: default;
+
+    &:hover {
+      color: variables.$color-grey-light-3;
+    }
+  }
+}

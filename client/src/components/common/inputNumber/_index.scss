@@ -1,0 +1,60 @@
+@use '../../app/variables';
+
+.input-number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.2s;
+
+  &_lg {
+    height: 4rem;
+  }
+
+  &_sm {
+    height: 3rem;
+  }
+
+  &__minus,
+  &__plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2rem;
+    color: variables.$color-grey-light-1;
+    background: variables.$color-primary;
+
+    width: 33.33%;
+    height: 100%;
+
+    &:hover {
+      color: variables.$color-secondary-light;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__minus {
+    border-radius: 3px 0 0 3px;
+  }
+
+  &__plus {
+    border-radius: 0 3px 3px 0;
+  }
+
+  &__input {
+    font-size: 2rem;
+    color: variables.$color-primary;
+    background: variables.$color-grey-light-2;
+    width: 33.33%;
+    height: 3rem;
+    border: none;
+    text-align: center;
+  }
+}

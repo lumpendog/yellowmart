@@ -1,0 +1,48 @@
+@use '../../app/variables';
+
+.table {
+  width: 100%;
+  margin-bottom: 2rem;
+  border: 0.5rem solid variables.$color-white;
+  border-top: 0.5rem solid variables.$color-white;
+  border-bottom: 3px solid variables.$color-white;
+  border-collapse: collapse;
+  outline: 3px solid variables.$color-secondary-light;
+  font-size: 1.5rem;
+  background: variables.$color-white;
+
+  & th {
+    font-weight: 600;
+    height: 4rem;
+    padding: 0.7rem;
+    background: variables.$color-secondary-light;
+    border: none;
+    text-align: left;
+    font-size: 1.5rem;
+    border-top: 3px solid variables.$color-white;
+    border-bottom: 3px solid variables.$color-secondary-light;
+  }
+
+  & td {
+    padding: 0.7rem;
+    border: none;
+    border-top: 3px solid variables.$color-white;
+    border-bottom: 3px solid variables.$color-white;
+    font-size: 1.5rem;
+
+    & a {
+      text-decoration: none;
+      color: variables.$color-grey-dark-3;
+      font-weight: 600;
+      transition: all 0.2s;
+
+      &:hover {
+        color: variables.$color-secondary-light;
+      }
+    }
+  }
+
+  & tbody tr:nth-child(even) {
+    background: variables.$color-grey-light-1;
+  }
+}

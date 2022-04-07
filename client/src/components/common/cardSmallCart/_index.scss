@@ -1,0 +1,49 @@
+@use '../../app/variables';
+
+.card-small-cart {
+  display: flex;
+  background-color: variables.$color-grey-light-2;
+  border-radius: 3px;
+  padding: 1rem;
+  color: variables.$color-grey-dark-3;
+
+  &__text-content {
+    flex: 1;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  &__id {
+    font-size: 1.2rem;
+    flex: 1;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+  }
+
+  &__button-box {
+    flex-basis: 25%;
+    display: flex;
+    flex: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}

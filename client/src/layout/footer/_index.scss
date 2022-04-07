@@ -1,0 +1,64 @@
+@use '../../components/app/variables';
+
+.footer {
+  background-color: variables.$color-primary;
+  color: variables.$color-grey-light-2;
+  padding: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+
+  &__part1,
+  &__part2 {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__h1,
+  &__h2,
+  &__h3,
+  &__social-icons {
+    margin-bottom: 1rem;
+  }
+
+  &__h1 {
+    font-weight: 200;
+  }
+
+  &__h2 {
+    font-weight: 300;
+  }
+
+  &__h3 {
+    font-weight: 300;
+  }
+
+  &__p {
+    color: variables.$color-grey-light-3;
+  }
+
+  .yellow {
+    color: variables.$color-secondary-light;
+  }
+
+  &__social-icons {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+
+    & > svg {
+      fill: variables.$color-grey-light-3;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

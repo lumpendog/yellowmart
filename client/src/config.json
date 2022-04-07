@@ -1,0 +1,6 @@
+{
+  "apiEndpointDevelopment": "http://localhost:8080/api/",
+  "apiEndpointProduction": "http://81.163.27.83/api/",
+  "isFirebase": false,
+  "tokenExpirationTime": 3600
+}

@@ -1,0 +1,45 @@
+@use '../../app/variables';
+
+.search-box {
+  position: relative;
+  grid-column: 2/3;
+  min-width: 30rem;
+  margin: 0 5rem;
+
+  &__input {
+    width: 100%;
+    outline: none;
+    height: 4rem;
+    border: none;
+    border-radius: 100px;
+    padding-left: 1.2rem;
+    color: variables.$color-grey-dark-3;
+    font-size: 1.8rem;
+
+    &::placeholder {
+      color: variables.$color-grey-light-3;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    height: 4rem;
+    width: 12rem;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    color: variables.$color-grey-dark-2;
+    background-color: variables.$color-secondary-light;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      color: variables.$color-grey-dark-3;
+    }
+
+    &:active {
+      transform: scale(1.07);
+    }
+  }
+}

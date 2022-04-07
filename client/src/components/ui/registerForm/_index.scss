@@ -1,0 +1,16 @@
+.register-form {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 2/3;
+  width: 50rem;
+  padding: 3rem;
+
+  @media screen and (max-width: 1200px) {
+    grid-column: 1/4;
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+}
