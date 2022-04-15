@@ -16,6 +16,12 @@ const ShoppingCart = () => {
     handleFilterChange
   } = useShoppingCart();
 
+  if (listCrop.length === 0) {
+    return (
+      <h2 className="shopping-cart-empty">Your shopping cart is empty.</h2>
+    );
+  }
+
   return (
     <>
       <div className="shopping-cart-container">

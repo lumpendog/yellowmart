@@ -1,0 +1,35 @@
+.intro-left {
+  grid-column: 1/2;
+}
+
+.intro-right {
+  grid-column: 2/4;
+}
+
+.intro-1 {
+  grid-column: 1/2;
+  background-image: url('../../../../public/main/ads-2.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.intro-2 {
+  grid-column: 1/2;
+  background-image: url('../../../../public/main/ads-3.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.intro-3 {
+  grid-column: 2/4;
+  grid-row: span 2;
+  background-image: url('../../../../public/main/ads-1.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1;
+}

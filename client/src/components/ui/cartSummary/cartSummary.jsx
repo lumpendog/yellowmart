@@ -1,16 +1,22 @@
 import React from 'react';
 import Button from '../../common/button';
-import { useSelector } from 'react-redux';
-import { getShoppingCartTotalData } from '../../../store/cart';
+import { toast } from 'react-toastify';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  clearShoppingCart,
+  getShoppingCartTotalData
+} from '../../../store/cart';
 import formatPrice from '../../../utils/formatPrice';
 import history from '../../../utils/history';
 
 const CartSummary = () => {
   const { totalQuantity, totalSum } = useSelector(getShoppingCartTotalData());
+  const dispatch = useDispatch();
   const shippingCost = totalQuantity ? totalQuantity * 40 + 25 : 0;
 
   const handleCheckout = () => {
-    // TODO: send data to server, send back # of order, clean shopping cart
+    dispatch(clearShoppingCart());
+    toast.success('Your order has been send');
     history.push('/');
   };
 

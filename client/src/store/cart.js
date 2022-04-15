@@ -123,6 +123,16 @@ export const decrementQuantity = (id) => (dispatch, getState) => {
   }
 };
 
+export const clearShoppingCart = () => (dispatch) => {
+  dispatch(cartChangeRequestSend());
+  try {
+    localStorageService.removeShoppingCartData();
+    dispatch(cartRequestSuccess([]));
+  } catch (e) {
+    dispatch(cartChangeRequestFail(e.message));
+  }
+};
+
 export const getLoadingStatus = () => (state) => state.cart.isLoading;
 export const getShoppingCart = () => (state) => state.cart.entities;
 export const getShoppingCartTotalData = () => (state) => {

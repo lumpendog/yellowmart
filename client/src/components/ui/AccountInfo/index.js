@@ -1,4 +1,4 @@
 import './_index.scss';
-import AccountInfo from './AccountInfo';
+import AccountInfo from './accountInfo';
 
 export default AccountInfo;

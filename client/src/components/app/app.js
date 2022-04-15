@@ -1,5 +1,6 @@
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from '../../layout/footer';
 import Header from '../../layout/header';
 import Main from '../../layout/main';
