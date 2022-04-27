@@ -3,6 +3,7 @@
 ## Task for this project is here:
 
 https://vladilen.notion.site/fabc0ce14d5a4fac8d2fcda4eec48e48
+
 https://vladilen.notion.site/6-9e11b93bd58347299ff73a31318b72d6
 
 ### Technologies used in project:
@@ -22,9 +23,9 @@ Backend:
 - MongoDB
 - JWT
 
-### Features made in this project:
+### Features implemented in this project:
 
-Frondend implemented:
+Frondend:
 
 - product list (getting it from REST API)
 - pagination
